@@ -10,6 +10,7 @@ namespace UntappedWidgetGenerator.Web
         public IndexModule()
         {
             Get["/"] = x => { return View["Views/Index/Index.cshtml", "tparnell"]; };
+            Get["/{username}/browse"] = x => { return View["Views/Index/Index.cshtml", (string)x.username]; };
             Get["/{username}"] = parameters =>
             {
                 var info = new UntappedRepository().Get(parameters.username);
