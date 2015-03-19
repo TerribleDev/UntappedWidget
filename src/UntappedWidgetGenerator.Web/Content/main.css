@@ -1,0 +1,45 @@
+﻿.profile {
+  background-position: center 0px;
+  background-repeat: no-repeat;
+  height: 240px;
+  width: 1024px;
+  position: relative;
+}
+.profile .badges img {
+  width: 52px;
+  height: 52px;
+  border-radius: 27px;
+}
+.profile .stats-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 52px;
+}
+.profile .user-info {
+  position: absolute;
+  left: 20px;
+  bottom: 55px;
+  z-index: 2;
+}
+.profile .user-info .user-avatar {
+  display: inline-block;
+  vertical-align: top;
+}
+.profile .user-info .avatar-holder {
+  overflow: hidden;
+  border-radius: 64px;
+  width: 124px;
+  height: 124px;
+  border: 4px solid white;
+}
+.profile .user-info .info {
+  padding: 46px 0 0 16px;
+  font-family: "ProximaNova", Helvetica Neue, Helvetica;
+  color: white;
+  display: inline-block;
+}
+/*# sourceMappingURL=main.css.map */

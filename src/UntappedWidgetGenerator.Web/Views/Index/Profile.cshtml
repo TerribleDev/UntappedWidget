@@ -1,0 +1,26 @@
+﻿@inherits Nancy.ViewEngines.Razor.NancyRazorViewBase<UntappedWidgetGenerator.Model.WidgetViewModel>
+@{
+    Layout = null;
+}
+<div class="profile" style="background-image: Url('@Model.HeaderBackgroundUrl')">
+    <div class="user-info">
+        <div class="user-avatar">
+            <div class="avatar-holder">
+                <img src="@Model.AvatarUrl" alt="User Avatar" />
+            </div>
+        </div>
+        <div class="info">
+            <h1>@Model.Info</h1>
+            <span class="username">@Model.Username</span>
+        </div>
+    </div>
+    <div class="stats-bar">
+        <span class="badges">
+            @foreach (var x in Model.Badges)
+            {
+                @Html.Partial("Badge", x);
+            }
+        </span>
+    </div>
+</div>
+

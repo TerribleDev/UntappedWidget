@@ -1,0 +1,15 @@
+﻿@inherits Nancy.ViewEngines.Razor.NancyRazorViewBase<string>
+    @{
+        Layout = "Views/Shared/_Layout.cshtml";
+    }
+<div id="target"></div>
+@section styles{
+    <link rel="stylesheet" href="~/Content/main.min.css" />
+}
+
+@section scripts{
+    <script src="~/Scripts/Jquery.Untapped.js"></script>
+    <script> $(document).ready(function() {
+    $("#target").untappd("@Model");
+});</script>
+}

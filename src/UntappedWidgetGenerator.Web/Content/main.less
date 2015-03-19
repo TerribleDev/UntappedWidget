@@ -1,0 +1,61 @@
+﻿@background-main: #FFCC00;
+@background-social: rgba(0, 0, 0, 0.6);
+@border: white;
+@font: "ProximaNova", Helvetica Neue, Helvetica;
+@fontColor: white;
+
+
+.profile {
+    background-position: center -0px;
+    background-repeat: no-repeat;
+    height: 240px;
+    width: 1024px;
+    position: relative;
+
+    .badges {
+
+        img{
+            width: 52px;
+            height: 52px;
+            border-radius: 27px;
+        }
+       
+    }
+
+    .stats-bar {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        height: 52px;
+    }
+
+    .user-info {
+        position: absolute;
+        left: 20px;
+        bottom: 55px;
+        z-index: 2;
+
+        .user-avatar {
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        .avatar-holder {
+            overflow: hidden;
+            border-radius: 64px;
+            width: 124px;
+            height: 124px;
+            border: 4px solid @border;
+        }
+
+        .info {
+            padding: 46px 0 0 16px;
+            font-family: @font;
+            color: @fontColor;
+            display: inline-block;
+        }
+    }
+}
