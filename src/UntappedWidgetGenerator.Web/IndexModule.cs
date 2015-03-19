@@ -12,10 +12,6 @@ namespace UntappedWidgetGenerator.Web
             Get["/"] = x => { return View["Views/Index/Index.cshtml", "tparnell"]; };
             Get["/{username}"] = parameters =>
             {
-                return View["Views/Index/Index.cshtml", (string)parameters.username];
-            };
-            Post["/{username}"] = parameters =>
-            {
                 var info = new UntappedRepository().Get(parameters.username);
                 return View["Profile", info];
             };
