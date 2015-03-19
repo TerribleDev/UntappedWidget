@@ -105,7 +105,6 @@
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
     <Content Include="Scripts\Jquery.Untapped.js" />
-    <Content Include="Scripts\npm.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
