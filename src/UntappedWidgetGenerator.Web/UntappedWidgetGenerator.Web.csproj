@@ -84,13 +84,13 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
-    <Content Include="Content\nancy-logo.png" />
-    <Content Include="Content\jquery.css">
+    <Content Include="Content\jquery.UntappedWidget.css">
       <DependentUpon>jquery.UntappedWidget.less</DependentUpon>
     </Content>
-    <Content Include="Content\jquery.min.css">
-      <DependentUpon>jquery.css</DependentUpon>
+    <Content Include="Content\jquery.UntappedWidget.min.css">
+      <DependentUpon>jquery.UntappedWidget.css</DependentUpon>
     </Content>
+    <Content Include="Content\nancy-logo.png" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -99,6 +99,9 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <Content Include="Content\bootstrap.css.map" />
+    <Content Include="Content\jquery.UntappedWidget.css.map">
+      <DependentUpon>jquery.UntappedWidget.css</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -118,9 +121,6 @@
     <Content Include="packages.config" />
     <Content Include="Views\Index\Badge.cshtml" />
     <Content Include="Content\jquery.UntappedWidget.less" />
-    <Content Include="Content\jquery.css.map">
-      <DependentUpon>jquery.css</DependentUpon>
-    </Content>
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Scripts\jquery-1.9.1.min.map" />
     <Content Include="Views\Index\Profile.cshtml" />
