@@ -11,11 +11,12 @@ namespace UntappedWidgetGenerator.Web
         {
             Get["/"] = x => { return View["Views/Index/Index.cshtml", "tparnell"]; };
             Get["/{username}/browse"] = x => { return View["Views/Index/Index.cshtml", (string)x.username]; };
-            Get["/{username}"] = parameters =>
+            Get["/{username}/html"] = parameters =>
             {
                 var info = new UntappedRepository().Get(parameters.username);
                 return View["Profile", info];
             };
+            Get["/{username}"] = parameters => Response.AsJson(new UntappedRepository().Get((string)parameters.username));
         }
     }
 }
