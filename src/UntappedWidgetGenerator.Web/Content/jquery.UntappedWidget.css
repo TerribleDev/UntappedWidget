@@ -5,6 +5,9 @@
   max-width: 1024px;
   position: relative;
 }
+.profile .badges {
+  margin-right: 3px;
+}
 .profile .badges img {
   width: 52px;
   height: 52px;

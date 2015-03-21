@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using CsQuery;
 using UntappedWidgetGenerator.Interface;
 using UntappedWidgetGenerator.Model;
@@ -37,7 +38,7 @@ namespace UntappedWidgetGenerator
                     dom[".profile_header"].Css("background-image").ToLower().TrimStart("url".ToCharArray()).TrimStart('(').TrimEnd(')').Trim('\''),
                 Info = dom[".info h1"].Text(),
                 Username = dom[".username"].Text(),
-                Badges = badges
+                Badges = badges.OrderBy(a=>Guid.NewGuid()).Take(17).ToList()
                 
             };
         }
