@@ -90,7 +90,6 @@
     <Content Include="Content\jquery.UntappedWidget.min.css">
       <DependentUpon>jquery.UntappedWidget.css</DependentUpon>
     </Content>
-    <Content Include="Content\nancy-logo.png" />
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

@@ -1,0 +1,18 @@
+version: 1.0.{build}
+before_build:
+- nuget restore
+build:
+  publish_wap: true
+  verbosity: normal
+deploy:
+- provider: WebDeploy
+  server: https://untappdwidget.scm.azurewebsites.net:443/msdeploy.axd?site=untappdwidget
+  website: untappdwidget
+  username: $untappdwidget
+  password:
+    secure: iYU7398jeYGULDTNSN5PPMOQ/qleWIOyah3LAQNa0aWjXhUdtcLuViOlcoqRasNiLiDUppIYnAaTr9QTSnzTNA==
+  remove_files: true
+  on:
+    branch: master
+matrix:
+  fast_finish: true
