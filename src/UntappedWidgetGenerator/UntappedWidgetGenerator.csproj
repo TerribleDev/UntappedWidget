@@ -42,6 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Interface\IUntappedRepository.cs" />
     <Compile Include="Model\Badge.cs" />
     <Compile Include="Model\WidgetViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

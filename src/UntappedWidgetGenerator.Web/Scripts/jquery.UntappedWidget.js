@@ -32,10 +32,7 @@
     $.fn.untappd = function (username) {
         this.each(function () {
             var that = this;
-            $.get("http://untappdwidget.azurewebsites.net/" + username)
-                .success(function (data) {
-                    $(that).html(buildProfileTemplate(data,buildBadges(data)));
-                });
+            $.get("http://untappdwidget.azurewebsites.net/" + username, function(data) { $(that).html(buildProfileTemplate(data, buildBadges(data))); }, "jsonp");
         });
     };
 

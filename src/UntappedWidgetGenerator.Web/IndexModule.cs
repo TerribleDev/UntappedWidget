@@ -1,22 +1,20 @@
-﻿using System.Collections.Generic;
-using UntappedWidgetGenerator.Model;
+﻿using Nancy;
+using UntappedWidgetGenerator.Interface;
 
 namespace UntappedWidgetGenerator.Web
 {
-    using Nancy;
-
     public class IndexModule : NancyModule
     {
-        public IndexModule()
+        public IndexModule(IUntappedRepository repository )
         {
             Get["/"] = x => View["Views/Index/Index.cshtml", "tparnell"];
             Get["/{username}/browse"] = x => View["Views/Index/Index.cshtml", (string)x.username];
             Get["/{username}/html"] = parameters =>
             {
-                var info = new UntappedRepository().Get(parameters.username);
+                var info = repository.Get(parameters.username);
                 return View["Profile", info];
             };
-            Get["/{username}"] = parameters => Response.AsJson(new UntappedRepository().Get((string)parameters.username));
+            Get["/{username}"] = parameters => Response.AsJson(repository.Get((string)parameters.username));
         }
     }
 }

@@ -1,14 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using CsQuery;
+using UntappedWidgetGenerator.Interface;
 using UntappedWidgetGenerator.Model;
 
 namespace UntappedWidgetGenerator
 {
-    public class UntappedRepository
+    public class UntappedRepository : IUntappedRepository
     {
         public WidgetViewModel Get(string username)
         {
