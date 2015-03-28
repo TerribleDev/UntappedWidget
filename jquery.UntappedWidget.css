@@ -5,6 +5,18 @@
   max-width: 1024px;
   position: relative;
 }
+.profile a:link {
+  color: white;
+}
+.profile a:active {
+  color: white;
+}
+.profile a:hover {
+  color: white;
+}
+.profile a:visited {
+  color: white;
+}
 .profile .badges {
   margin-right: 3px;
 }

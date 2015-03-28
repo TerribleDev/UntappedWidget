@@ -8,8 +8,8 @@
             </div>\
         </div>\
         <div class=\"info\">\
-            <h1>"+ data.info + "</h1>\
-            <span class=\"username\">"+ data.username + "</span>\
+             <h1><a href=\"https://untappd.com/user/tparnell/" + data.username + "\">" + data.info + "</a></h1>\
+            <a class=\"username\" href=\"https://untappd.com/user/tparnell/" + data.username + "\">" + data.username + "</a>\
         </div>\
     </div>\
     <div class=\"stats-bar\">\
