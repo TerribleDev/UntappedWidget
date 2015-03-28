@@ -20,3 +20,4 @@ Submit pull requests
 * Make a build time minifier
 * Push to Bower?
 * Move the css/js into a cdn of some kind?
+* Make this look better on a phone
