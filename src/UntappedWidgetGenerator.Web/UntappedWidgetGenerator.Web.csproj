@@ -80,11 +80,21 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="..\..\jquery.UntappedWidget.css">
+      <Link>Content\jquery.UntappedWidget.css</Link>
+      <DependentUpon>jquery.UntappedWidget.less</DependentUpon>
+    </Content>
     <Content Include="..\..\jquery.UntappedWidget.js">
       <Link>Scripts\jquery.UntappedWidget.js</Link>
     </Content>
+    <Content Include="..\..\jquery.UntappedWidget.min.css">
+      <Link>Content\jquery.UntappedWidget.min.css</Link>
+      <DependentUpon>jquery.UntappedWidget.css</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="..\..\jquery.UntappedWidget.min.js">
       <Link>Scripts\jquery.UntappedWidget.min.js</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -104,6 +114,11 @@
     <Content Include="..\..\jquery.UntappedWidget.min.js.map">
       <Link>Scripts\jquery.UntappedWidget.min.js.map</Link>
       <DependentUpon>jquery.UntappedWidget.min.js</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\jquery.UntappedWidget.css.map">
+      <Link>Content\jquery.UntappedWidget.css.map</Link>
+      <DependentUpon>jquery.UntappedWidget.css</DependentUpon>
     </Content>
     <None Include="Properties\PublishProfiles\f.pubxml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
