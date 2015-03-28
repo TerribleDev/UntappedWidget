@@ -20,14 +20,14 @@
 
 
     }
-    var buildBadges = function (data) {
+    var buildBadges = function(data) {
         var badges = "";
-        $.each(data.badges, function (index, value) {
+        $.each(data.badges, function(index, value) {
             badges = badges + "<a href=\"" + value.linkUrl + "\" ><span><img src=\"" + value.imageUrl + "\" /></span></a>";
         });
 
         return badges;
-    }
+    };
 
     $.fn.untappd = function (username) {
         this.each(function () {

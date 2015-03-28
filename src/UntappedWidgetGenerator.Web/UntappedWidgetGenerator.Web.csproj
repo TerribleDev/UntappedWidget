@@ -83,6 +83,9 @@
     <Content Include="..\..\jquery.UntappedWidget.js">
       <Link>Scripts\jquery.UntappedWidget.js</Link>
     </Content>
+    <Content Include="..\..\jquery.UntappedWidget.min.js">
+      <Link>Scripts\jquery.UntappedWidget.min.js</Link>
+    </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -97,6 +100,10 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="..\..\jquery.UntappedWidget.less">
       <Link>Content\jquery.UntappedWidget.less</Link>
+    </Content>
+    <Content Include="..\..\jquery.UntappedWidget.min.js.map">
+      <Link>Scripts\jquery.UntappedWidget.min.js.map</Link>
+      <DependentUpon>jquery.UntappedWidget.min.js</DependentUpon>
     </Content>
     <None Include="Properties\PublishProfiles\f.pubxml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />

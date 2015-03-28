@@ -38,7 +38,7 @@ namespace UntappedWidgetGenerator
                     dom[".profile_header"].Css("background-image").ToLower().TrimStart("url".ToCharArray()).TrimStart('(').TrimEnd(')').Trim('\''),
                 Info = dom[".info h1"].Text(),
                 Username = dom[".username"].Text(),
-                Badges = badges.OrderBy(a=>Guid.NewGuid()).Take(17).ToList()
+                Badges = badges.OrderBy(a=>Guid.NewGuid()).ToList()
                 
             };
         }
