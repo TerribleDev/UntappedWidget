@@ -6,9 +6,10 @@ This provides a simple embeddable widget for your [Untappd](https://untappd.com)
 
 Simply add the css and js files at the root of this project to your website. Then call:
 
+`$("#Target").untappd("YourUsername");`
+
 We host the css at `http://untappdwidget.azurewebsites.net/Content/jquery.UntappedWidget.min.css`
 We host the js at `http://untappdwidget.azurewebsites.net/Scripts/jquery.UntappedWidget.min.js`
-`$("#Target").untappd("YourUsername");`
 
 ## How do I contribute?
 
